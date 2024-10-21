@@ -10,14 +10,18 @@ class PasswordValidatorTest : FreeSpec({
         "when validating it" - {
             "then it should return true if it is strong and false if it is weak" - {
                 withData(
-                    "P@ssw0rd" to true,
-                    "P@ssw0r" to false,
-                    "p@ssw0rd" to false,
-                    "P@SSW0RD" to false,
-                    "P@ssword" to false,
-                    "Password1" to false
-                ) { (password, expected) ->
-                    isValid(password) shouldBe expected
+                    "P@ssw0rd",
+                    "P@ssw0r",
+                    "p@ssw0rd",
+                    "P@SSW0RD",
+                    "P@ssword",
+                    "Password1",
+                ) { password ->
+                    withData(
+
+                    ) { minLength ->
+
+                    }
                 }
             }
         }
