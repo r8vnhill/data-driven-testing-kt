@@ -5,7 +5,7 @@ plugins {
 }
 
 val projectGroup = extra["data-driven-testing.group"]!!
-val projectVersion: String = libs.versions.functional.programming.get()
+val projectVersion: String = libs.versions.data.driven.testing.get()
 val detektId: String = libs.plugins.detekt.get().pluginId
 val detektFormattingModule = libs.detekt.formatting.get().module.toString()
 val detektFormattingVersion = libs.detekt.formatting.get().version
