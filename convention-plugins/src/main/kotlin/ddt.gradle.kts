@@ -13,7 +13,9 @@ tasks.register("setupDdtModule") {
         createFiles(
             packageName = "validator",
             main to "PasswordValidator.kt",
-            test to "PasswordValidatorTest.kt"
+            test to "PasswordValidatorTest.kt",
+            main to "PhoneNumberValidator.kt",
+            test to "PhoneNumberValidatorTest.kt"
         )
     }
 }
