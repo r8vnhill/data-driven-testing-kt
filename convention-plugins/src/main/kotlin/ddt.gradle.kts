@@ -1,5 +1,5 @@
 val baseName = "ddt"
-val baseDir = rootProject.file(baseName)
+val baseDir: File = rootProject.file(baseName)
 val printError: (String) -> Unit = System.err::println
 val (main, test) = listOf("main", "test").map { baseDir.resolve("src/$it/kotlin") }
 
